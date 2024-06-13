@@ -23,7 +23,7 @@ body {
   padding: 1rem 0;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.15);
   border-radius: 24px;
-  z-index: 2;/* Ensure it stays on top */
+  z-index: 2;
 }
 
 .bottom-nav__link {
@@ -106,10 +106,10 @@ body {
   background-color: #152045;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  height: 2840px;
+  height: 2400px;
   padding: 24px;
   position: absolute;
-  top: 90px;/* Adjust as needed to overlap the header */
+  top: 90px;
   left: 0;
   width: 100%;
   bottom: 0;
@@ -145,10 +145,6 @@ body {
   font-size: 1.9rem;
 }
 
-/* .calendar-navigation span:last-child {
-    margin-right: -10px;
-} */
-
 .calendar-navigation span:hover {
   background: #f2f2f2;
 }
@@ -159,10 +155,6 @@ body {
   font-weight: 600;
   font-size: 1em;
 }
-
-/* .calendar-body {
-    padding: 8px;
-} */
 
 .calendar-body ul {
   list-style: none;
@@ -331,7 +323,7 @@ body {
   justify-content: center; 
   cursor: pointer;
   margin-top: 24px;
-  white-space: nowrap; /* Prevent text wrapping */
+  white-space: nowrap; 
 }
 
 .bar-chart-placeholder {
@@ -490,7 +482,6 @@ body {
   font-size: 16px;
   color: #757687;
   margin-left: 8px;
-  /* Ensure some space between text and icon */
 }
 
 .sleep-journal-container {
@@ -511,7 +502,7 @@ body {
 }
 
 .mood-container {
-  flex: 3; /* Take up three-quarters of the width */
+  flex: 3; 
 }
 
 .mood-button-container {
@@ -533,6 +524,10 @@ body {
 
 .diary-entry-container {
   margin-top: 16px;
+  color: white;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
 }
 
 .diary-entry {
@@ -702,11 +697,6 @@ body {
   margin-right: 8px;
 }
 
-/* .time-icon .material-icons {
-      font-size: 24px;
-      margin-right: 8px;
-    } */
-
 .time-label {
   font-family: 'Nanum Myeongjo', serif;
   font-weight: 800;
@@ -758,6 +748,7 @@ body {
   background-color: #152045;
   padding: 24px;
   text-align: center;
+  height: 1000px;
 }
 
 .end-session-container .first-container p {
@@ -824,7 +815,6 @@ body {
 .end-session-container .time-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 16px;
 }
 
 .end-session-container .time-container .input-container {
@@ -945,88 +935,3 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
-/* old styling */
-.sessions-container {
-  background: url('/img/bed.jpg') no-repeat center center;
-  background-size: cover;
-  position: relative;
-  border-radius: 24px;
-  padding: 20px;
-  margin-top: 24px;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.sessions-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 24px;
-}
-
-.sessions-container .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 24px;
-  z-index: 1;
-}
-
-.sessions-container h2 {
-  position: relative;
-  z-index: 2;
-  margin-bottom: 8px;
-  font-family: "Nanum Myeongjo", serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 1.25em;
-}
-
-.sessions-container p {
-  position: relative;
-  z-index: 2;
-  margin-bottom: 40px;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 0.75em;
-}
-
-.cta-button {
-  position: relative;
-  z-index: 2;
-  background-color: #708AF4;
-  color: #fff;
-  border: none;
-  border-radius: 24px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  font-size: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: stretch;
-  cursor: pointer;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 1em;
-}
-
-.cta-button i {
-  margin-right: 10px;
-  font-size: 24px;
-}
-
-/* old styling */

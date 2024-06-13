@@ -1,8 +1,18 @@
 {
+  "description": "A Single Page Application",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "exceljs": "^4.4.0",
     "express": "^4.19.2"
-  }
+  },
+  "name": "sleep-tracker",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

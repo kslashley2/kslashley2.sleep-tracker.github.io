@@ -3,8 +3,6 @@ const express = require('express');
 const path = require('path');
 const csv = require('csv-parser');
 const bodyParser = require('body-parser');
-
-
 const app = express();
 const port = 4000;
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
@@ -14,7 +12,7 @@ app.use(bodyParser.json());
 
 app.use(express.json());
 
-// Endpoint to handle POST requests to add session data
+//Endpoint to handle POST requests to add session data
 app.post('/end-session', (req, res) => {
 
   var results = [];

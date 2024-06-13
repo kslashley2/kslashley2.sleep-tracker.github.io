@@ -1,5 +1,6 @@
 const routes = {
-  '/': `
+  //Dashboard screen
+    '/': `
     <div class="added-container">
         <div class="media-player-container">
             <div class="song-info">
@@ -205,6 +206,7 @@ const routes = {
         </div>
     </div>
   `,
+  //Sleep state screen
   '/add-session': `
     <div class="add-session-container">
         <div class="session-label">In Session</div>
@@ -233,6 +235,7 @@ const routes = {
         </button>
     </div>
     `,
+    // Sleep logging input screen
     '/end-session': `
     <div class="end-session-container">
         <div class="first-container">
@@ -325,8 +328,7 @@ const routes = {
   `
 };
 
-
-
+//Establishing the routing backend
 const navigateTo = url => {
     history.pushState(null, null, url);
     router();
@@ -363,6 +365,7 @@ const initializeRouter = () => {
     router();
 };
 
+//Calendar
 const initializeCalendar = () => {
     let date = new Date();
     let year = date.getFullYear();
@@ -429,7 +432,6 @@ const initializePage = () => {
             navigateTo('/add-session');
         });
 
-        // Event listener for mood buttons
         document.querySelectorAll('[data-mood]').forEach(button => {
             button.addEventListener('click', () => {
                 document.querySelectorAll('[data-mood]').forEach(btn => btn.classList.remove('selected'));
@@ -443,6 +445,7 @@ const initializePage = () => {
     } 
 };
 
+//Fetching and loading of all propoerties 
 const loadSessions = () => {
     fetch('/sessions')
         .then(response => response.json())
@@ -491,6 +494,7 @@ const loadSessions = () => {
         .catch(error => console.error('Error fetching sessions:', error));
 };
 
+//Updating csv data
 const submitSessionData = () => {
     const selectedMoodButton = document.querySelector('.mood-button.selected');
     

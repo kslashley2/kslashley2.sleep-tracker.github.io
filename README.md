@@ -23,16 +23,21 @@ With the rise of tracking innovations, individuals can now assess, recognize, an
 6. Analyse the new set of sleep trends, patterns and recommendations based on the recorded session. 
 
 **Version control**
-Please see the Github repository here: "[git@github.com](mailto:git@github.com):kslashley2/kslashley2.sleep-tracker.github.io.git"
+Please see the Github repository here: "git@github.com:kslashley2/kslashley2.sleep-tracker.github.io.git"
 
 **Setup**
 No setup is required.
 
 **Development**
 
+![AppScreens](sleep-tracker\development\data.png)
+![AppScreens](sleep-tracker\development\session.png)
+
 Due to the limitations of real-time data from users, the data-driven insights screen will be integrated with the dashboard and filtered to prioritised dataset that can still effectively measure user sleep health.  
 
 With the new navigation integration, the single page architecture functions with mainly three navigational screens: Dashboard; Add Session; Settings. Where users are only required to toggle between the dashboard and session screen mainly to track and analyse the metrics and customised recommendations. 
+
+![AppScreens](sleep-tracker\development\final.png)
 
 Exploring the initial concepts, the proposal of scheduling a wake up time was reduced due to the time limitations in integrating that to the system with the new input log. The logging of each new session has been mixed and integrated into a single input screen to reduce the cognitive load of navigating users through a series of screens to complete a single action. The single logging session now prioritise the measurement of the session date, start time, end time, number of disruptions, mood, and a sleep journal. 
 

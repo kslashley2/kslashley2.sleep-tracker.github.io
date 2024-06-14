@@ -935,3 +935,554 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
+/* Desktop*/
+@media (min-width: 768px) {
+  
+  body {
+    margin: 0;
+  }
+
+  .bottom-nav {
+    width: 56px;
+    height: 300px;
+    background-color: white;
+    margin-left: 40px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 40px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+  .bottom-nav__link {
+    color: #757687;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%; 
+    padding: 16px 0; 
+}
+
+  .bottom-nav__icon {
+    font-size: 40px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    gap: 24px;
+  }
+  
+  .media-player-container, .calendar-container {
+    grid-column: 1 / 2;
+  }
+  
+  .previous-session-container, .heart-rate-container, .respiratory-container, .insights-container {
+    grid-column: 2 / 3;
+    align-self: start;
+  }
+
+    .main-container {
+      padding: 40px;
+      margin-left: 40px; 
+    }
+  
+    .media-player-container {
+      height: 200px;
+      margin-bottom: 24px;
+      padding: 40px;
+      color: #fff;
+      text-align: left;
+      position: relative;
+      width: 30%;
+    }
+  
+    .song-info {
+      font-size: 1.2em;
+    }
+  
+    .song-name {
+      font-size: 1.5em;
+    }
+  
+    .current-time {
+      font-size: 1em;
+    }
+  
+    .calendar-container {
+      background-color: white;
+      border-radius: 24px;
+      padding: 24px;
+      align-items: center;
+    }
+  
+    .calendar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .calendar-current-date {
+      color: #708AF4;
+      font-family: 'Nanum Myeongjo', sans-serif;
+      font-weight: 800;
+      font-size: 1.5em;
+    }
+  
+    .calendar-body ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .calendar-body li {
+      color: #152045;
+      font-size: 1em;
+      font-weight: 500;
+    }
+  
+    .calendar-body .calendar-day {
+      color: #AEA8BA;
+      font-family: 'Nanum Myeongjo', sans-serif;
+      font-weight: 800;
+    }
+  
+    .previous-session-container {
+      background-color: white;
+      border-radius: 24px;
+      padding: 40px;
+      margin: 40px auto;
+      width:100%
+    }
+  
+    .previous-session-container h2 {
+      color: #708AF4;
+      text-align: left;
+      font-family: 'Nanum Myeongjo', sans-serif;
+      font-weight: 600;
+      font-size: 1.5em;
+    }
+  
+    .session-details {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+  
+    .sleep-data-container p {
+      color: #152045;
+      font-size: 1em;
+      font-family: 'Red Hat Text', sans-serif;
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+  
+    .doughnut-chart-added-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .doughnut-chart-added {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .circle-bg-added {
+      fill: none;
+      stroke: #eee;
+      stroke-width: 3.8;
+    }
+  
+    .circle-added {
+      fill: none;
+      stroke-width: 2.8;
+      stroke: #708AF4;
+      stroke-linecap: round;
+      animation: progress 1s ease-out forwards;
+    }
+  
+    @keyframes progress {
+      0% {
+        stroke-dasharray: 0 100;
+      }
+    }
+  
+    .dataset-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .disruptions {
+      margin-top: 16px;
+    }
+  
+    .time-period span,
+    .disruptions span {
+      color: #152045;
+      font-size: 1em;
+      font-family: 'Red Hat Text', sans-serif;
+    }
+  
+    .description {
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+    }
+  
+    .description img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+  
+    .description span {
+      color: #AEA8BA;
+      font-size: 1em;
+      font-family: 'Red Hat Text', sans-serif;
+      font-weight: 500;
+    }
+  
+    .new-session-button {
+      height: 56px;
+      background-color: #708AF4;
+      border: none;
+      border-radius: 24px;
+      padding: 16px 24px;
+      color: white;
+      font-size: 1.2em;
+      font-family: 'Red Hat Text', sans-serif;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      margin-top: 24px;
+      white-space: nowrap;
+    }
+  
+    .bar-chart-placeholder {
+      width: 500px;
+      height: 400px;
+      background-color: #e0e0e0;
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2em;
+      color: #aaa;
+      border-radius: 8px;
+    }
+  
+    .heart-rate-container {
+      background-color: white;
+      border-radius: 24px;
+      padding: 40px;
+      align-items: center;
+      margin-top: 40px;
+    }
+  
+    .heart-icon-container {
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+      border-radius: 40px;
+      background-color: #708AF4;
+      width: 36px;
+      height: 36px;
+      margin: 0 auto;
+    }
+  
+    .heart-icon {
+      font-size: 36px;
+      color: white;
+    }
+  
+    .average-heart-rate {
+      color: #708AF4;
+      font-family: "Nanum Myeongjo", serif;
+      font-weight: 800;
+      font-size: 1.5em;
+      text-align: center;
+      margin-top: 24px;
+    }
+  
+    .average-heart-rate-label {
+      color: #757687;
+      font-family: "Red Hat Text", sans-serif;
+      font-size: 1em;
+      text-align: center;
+      margin-top: 8px;
+    }
+  
+    .heart-rate-info {
+      color: #152045;
+      font-family: "Red Hat Text", sans-serif;
+      font-weight: 400;
+      font-size: 1.2em;
+      margin-top: 24px;
+    }
+  
+    .recommendations {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 16px;
+    }
+  
+    .recommendation-item {
+      color: #757687;
+      font-family: "Red Hat Text", sans-serif;
+      font-weight: 400;
+      font-size: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+  
+    .recommendation-icon {
+      font-size: 16px;
+      color: #757687;
+      margin-left: 8px;
+    }
+  
+    .respiratory-container {
+      background-color: white;
+      border-radius: 24px;
+      padding: 40px;
+      align-items: center;
+      margin-top: 40px;
+    }
+  
+    .wind-icon-container {
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+      border-radius: 40px;
+      background-color: #708AF4;
+      width: 36px;
+      height: 36px;
+      margin: 0 auto;
+    }
+  
+    .wind-icon {
+      font-size: 36px;
+      color: white;
+    }
+  
+    .average-respiratory-rate {
+      color: #708AF4;
+      font-family: "Nanum Myeongjo", serif;
+      font-weight: 800;
+      font-size: 1.5em;
+      text-align: center;
+      margin-top: 24px;
+    }
+  
+    .average-respiratory-rate-label {
+      color: #757687;
+      font-family: "Red Hat Text", sans-serif;
+      font-weight: 400;
+      font-size: 1em;
+      text-align: center;
+      margin-top: 8px;
+    }
+  
+    .respiratory-rate-info {
+      color: #152045;
+      font-family: "Red Hat Text", sans-serif;
+      font-weight: 400;
+      font-size: 1.2em;
+      margin-top: 16px;
+    }
+  
+    .causes {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 16px;
+    }
+  
+    .cause-item {
+      color: #757687;
+      font-family: "Red Hat Text", sans-serif;
+      font-weight: 400;
+      font-size: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+  
+    .cause-icon {
+      font-size: 16px;
+      color: #757687;
+      margin-left: 8px;
+    }
+  
+    .sleep-journal-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 24px;
+    }
+  
+    .sleep-journal-title {
+      flex: 1;
+    }
+  
+    .sleep-journal-header {
+      color: #152045;
+      font-family: "Nanum Myeongjo", serif;
+      font-weight: 800;
+      font-size: 1.2em;
+      margin-bottom: 16px;
+    }
+  
+    .journal-entry {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .journal-date {
+      color: #708AF4;
+      font-family: "Red Hat Text", sans-serif;
+      font-weight: 500;
+      font-size: 1em;
+    }
+  
+    .journal-text {
+      color: #152045;
+      font-family: "Red Hat Text", sans-serif;
+      font-weight: 400;
+      font-size: 1em;
+      margin-top: 8px;
+    }
+  
+    .audio-title {
+      color: #708AF4;
+      font-family: "Red Hat Text", sans-serif;
+      font-weight: 500;
+      font-size: 1em;
+      margin-top: 16px;
+    }
+  
+    .audio-player {
+      width: 100%;
+      height: 50px;
+      background-color: #e0e0e0;
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .insight-container {
+      background-color: white;
+      padding: 40px;
+      margin-top: 40px;
+      border-radius: 10px;
+    }
+  
+    .insight-icon-container {
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+      border-radius: 40px;
+      background-color: #708AF4;
+      width: 36px;
+      height: 36px;
+      margin: 0 auto;
+    }
+  
+    .insight-icon {
+      font-size: 36px;
+      color: white;
+    }
+  
+    .insight-header {
+      color: #708AF4;
+      font-family: "Nanum Myeongjo", serif;
+      font-weight: 800;
+      font-size: 1.5em;
+      text-align: center;
+      margin-top: 24px;
+    }
+  
+    .insight-list {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 24px;
+    }
+  
+    .insight-item {
+      margin-bottom: 16px;
+      margin-top: 16px;
+    }
+  
+    .insight-text-container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .insight-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #708AF4;
+      font-family: "Red Hat Text", sans-serif;
+      font-weight: 500;
+      font-size: 1em;
+    }
+  
+    .insight-body {
+      color: #152045;
+      font-family: "Red Hat Text", sans-serif;
+      font-weight: 400;
+      font-size: 1em;
+      margin-top: 8px;
+    }
+  
+    .insight-arrow-icon {
+      font-size: 16px;
+      color: #757687;
+      margin-left: 8px;
+    }
+  
+    .delete-button button {
+      width: 100%;
+      margin-top: 40px;
+      padding: 12px;
+      color: white;
+      background-color: #152045;
+      border: 1px solid white;
+      border-radius: 24px;
+      font-family: "Red Hat Text", sans-serif;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .delete-button button:hover {
+      background-color: #708AF4;
+    }
+  
+    .delete-icon {
+      font-size: 1em;
+      margin-right: 8px;
+    }
+
+}

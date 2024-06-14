@@ -8,9 +8,15 @@ With the rise of tracking innovations, individuals can now assess, recognize, an
 
 **Features**
 
+<<<<<<< HEAD
 - ***Logging***: Record your sleep periods, including start and end times, and note any disruptions.
 - ***Analytics***: Receive detailed reports on your sleep quality and trends, and analyse heart rate variability and respiratory rate. Maintain a sleep journal to rate and reflect on your sleep quality. Track sleep patterns and trends over different days to understand and improve your sleep habits.
 - ***Recommendations***: Curated insights based on user data, causes and tips on improving their overall sleep health.
+=======
+- **Logging**: Record your sleep periods, including start and end times, and note any disruptions.
+- **Analytics**: Receive detailed reports on your sleep quality and trends, and analyse heart rate variability and respiratory rate. Maintain a sleep journal to rate and reflect on your sleep quality. Track sleep patterns and trends over different days to understand and improve your sleep habits.
+- **Recommendations**: Curated insights based on user data, causes and tips on improving their overall sleep health.
+>>>>>>> bf14ef0376d7dd2eadbb4f73d34a701ee1994320
 
 **Usage:**
 
@@ -25,7 +31,11 @@ After opening the 'index.html' file, please run 'npm rum start' in the terminal 
 
 **Version control**
 
+<<<<<<< HEAD
 Please see the Github repository here: "https://github.com/kslashley2/kslashley2.sleep-tracker.github.io.git"
+=======
+Please see the Github repository here: "kslashley2/kslashley2.sleep-tracker.github.io.git"
+>>>>>>> bf14ef0376d7dd2eadbb4f73d34a701ee1994320
 
 **Setup**
 
